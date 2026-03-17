@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import requests
-app = Flask(name)  
+app = Flask(__name__)  
 @app.route("/predict", methods=["POST"])
 def predict():
     text = request.json["email"]
