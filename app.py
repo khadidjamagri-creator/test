@@ -7,3 +7,4 @@ X = vectorizer.fit_transform(df["email"])
 y = df["label"]
 model = MultinomialNB()
 model.fit(X, y)
+app=Flask(__name__)
